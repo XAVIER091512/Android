@@ -1,0 +1,25 @@
+#Version1
+【1】set color.xml   ---> <color name="lavender">#8692f7</color>
+【2】set themes.xml  ---> <item name="colorPrimaryVariant">@color/lavender</item>
+【3】add custom.edittext
+【4】set the 3 layout (MainActivity -> SignupActivity -> LoginActivity)
+【4】write the MainActivity
+【5】Connect to the Firebase
+【5】write the SignUpActivity
+【6】write the LoginActivity
+【7】set AndroidManifest.xml and change the launcher
+       <activity
+            android:name=".SignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+【8】Button CornerRadius --> implementation 'com.google.android.material:material:1.3.0'
+【9】Button Background   --> backgroundTint = "@color/lavender"
